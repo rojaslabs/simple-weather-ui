@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <h1>Simple Weather UI</h1>
+            <ul>
+                <li><a href="#" onclick="loadingWeather()">Burbank</a></li>
+                <li><a href="#" onclick="loadingWeather()">Chicago</a></li>
+                <li><a href="#" onclick="loadingWeather()">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="city">
+            <h2>San José</h2>
+            <div class="select">
+                <span>show temperature in</span>
+                <select name="temperature" onchange="tConversor(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="Some rain">
+                <p>Lluvioso</p>
+                <ul>
+                    <li id="t1">24°</li>
+                    <li id="t2">18°</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="Some sun">
+                <p>Soleado</p>
+                <ul>
+                    <li id="t3">27°</li>
+                    <li id="t4">19°</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="Some clouds">
+                <p>Nublado</p>
+                <ul>
+                    <li id="t5">21°</li>
+                    <li id="t6">16°</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="Some sun">
+                <p>Soleado</p>
+                <ul>
+                    <li id="t7">26°</li>
+                    <li id="t8">21°</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cookies">
+        <img src="assets/cookie.png" alt="Cookie icon">
+        <div>
+            <h4>Stop! Cookie time</h4>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="dismiss()">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.header {
+    background-color: #1B4DE4;
+}
+
+.navbar {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 800px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 5px 15px;
+}
+
+.container {
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 30px;
+    width: 800px;
+    background-color: white;
+
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 25px 0;
+    padding: 10px 0 25px 0;
+}
+
+.select span {
+    margin-right: 10px;
+}
+
+select {
+    border: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 18%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    background-color: rgba(0, 0, 0, 0.02);
+    opacity: 0.4;
+}
+
+.card:nth-child(2) {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    background-color: white;
+    opacity: 1;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 15px 0 20px;
+}
+
+.card img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+.card ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card ul li {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.card ul li:first-child {
+    color: #db2b28;
+}
+
+.card ul li:last-child {
+    color: #1B4DE4;
+}
+
+.cookies {
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    line-height: 1.5;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cookies button {
+    background-color: #1B4DE4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.cookies img {
+    opacity: 0.3;
+}
